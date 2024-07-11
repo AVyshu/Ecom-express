@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+nav{
+    background-color: gray;
+    color:white;
+    display:flex;
+    justify-content: center;
+    padding:0px,20px;
+    align-items: center;
+    height:70px;
+    position:sticky;
+    top:0px;
+}
+nav.logo>img{
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    box-shadow: 0 0 15px black;
+}
+.navlinks{
+      display:flex;
+      width:60%;
+      justify-content: space-evenly;
+}
+.navlinks>.link{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+    font-weight: bold;
+}
+.navlinks>.link:hover{
+    transition: all 0.5s ease 0s;
+    color:orangered;
+    text-decoration: underline;
+}
+.login button{
+    padding:10px,20px;
+    background-color: orangered;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    border:none;
+    box-shadow:0 0 5px burlywood;
+}
+.login button:hover{
+    transition:all 0.2s ease-in 0s;
+    color:blueviolet;
+    background-color: white;
+    box-shadow: 0 0 5px orange;
+}
+@media screen and (min-width:0px)and(max-width:420px){
+      nav{
+        height:60px;
+      }
+    nav.logo>img{
+        height: 50px;
+        width:50px;
+    }
+    .navlinks{
+        display:none
+    }
+    .login button{
+        padding:7px 15px;
+        font-size:16px;
+        font-weight: bold;
+    }
+}
+@media(min-width:421px) and (max-width:768px){
+ nav{
+    padding:0;
+    height:70px;
+
+ }
+  nav.logo>img{
+    height:55px;
+    width:55px;
+  }
+  .navlinks>.link{
+    font-size: 15px;
+  }
+  .login button{
+    padding:8px 17px;
+    font-size:18px;
+    font-weight: bold;
+  }
+}

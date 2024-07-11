@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+.text{
+    height:500px;
+    width:500px;
+    align-items:center;
+    margin: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+.text>.ecom>span{
+    color: red;
+    font-size: 30px;
+    text-align: justify;
+}
+.text>.shop button{
+    padding:10px,20px;
+    background-color: orangered;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    display: grid;
+    
+}
+.text>.shop button:hover{
+    transition:all 0.2s ease-in 0s;
+    color:blueviolet;
+    background-color: white;
+}
+.shoe>img {
+    padding: 20px; 
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+  }
+.shoe>img{
+    height:500px;
+    width:400px;
+    margin:400px; 
+    justify-content: right;
+}
